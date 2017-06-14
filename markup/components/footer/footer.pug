@@ -1,0 +1,29 @@
+include ../social-networks/social-networks
+include ../form-subscribe/form-subscribe
+
+mixin footer()
+  // Footer
+  footer.-footer&attributes(attributes)
+    .__inner
+      .container-fluid
+        +social-networks()
+        .-footer.__name-site
+          | The style
+          small Женский блог о моде
+        -
+          var navList = [
+            {title: pages.moda.title, url: pages.moda.url},
+            {title: pages.krasota.title, url: pages.krasota.url},
+            {title: pages.lookbook.title, url: pages.lookbook.url},
+            {title: pages.about.title, url: pages.about.url}
+          ];
+        nav.-footer.__nav
+          each page in navList
+            +a(page.url).__nav-item #{page.title}
+        +form-subscribe()
+    .__inner._1
+      .container-fluid.text-center
+        p
+          +a()(data-fancybox='privacy-policy' data-type='ajax' data-src='popups/privacy-policy.html') Политика конфиденциальности
+
+  // /Footer

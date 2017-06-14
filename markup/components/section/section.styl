@@ -1,0 +1,28 @@
+.section
+  clearfix()
+  padding 25px 0
+  p
+    &:last-child
+      margin 0
+
+  &_1
+    padding 50px 0 45px
+    background #f6f6f6
+    a
+      color inherit
+      &:hover, &:focus
+        color $red-1
+    & {r}__col
+      float left
+      &_1
+        width percentage(712/952)
+        padding-right 90px
+
+      &_2
+        width percentage((952 - 712)/952)
+
+    & {r}__address
+      font-weight 500
+      strong
+        color #171717
+

@@ -1,0 +1,36 @@
+include ../components/doctype/doctype
+include ../components/header/header
+include ../components/content/content
+include ../components/footer/footer
+
++doctype(pages.lookbook.title)
+  .-wrapper
+    +header(false, [pages.lookbook.url])
+    +content
+      .__inner
+        .container-fluid
+          .-content.__view
+            .glyphicon.glyphicon-grid
+          .-gallery
+            +a().__item
+              img.__item-img(src='static/img/content/lookbook/342x342/photo-1.jpg' alt='' data-object-fit='cover' onload='objectFit(this)')
+            +a().__item
+              img.__item-img(src='static/img/content/lookbook/342x342/photo-2.jpg' alt='' data-object-fit='cover' onload='objectFit(this)')
+            +a().__item
+              img.__item-img(src='static/img/content/lookbook/342x342/photo-3.jpg' alt='' data-object-fit='cover' onload='objectFit(this)')
+            +a().__item
+              img.__item-img(src='static/img/content/lookbook/342x342/photo-4.jpg' alt='' data-object-fit='cover' onload='objectFit(this)')
+            +a().__item
+              img.__item-img(src='static/img/content/lookbook/342x342/photo-5.jpg' alt='' data-object-fit='cover' onload='objectFit(this)')
+            +a().__item
+              img.__item-img(src='static/img/content/lookbook/342x342/photo-6.jpg' alt='' data-object-fit='cover' onload='objectFit(this)')
+            +a().__item
+              img.__item-img(src='static/img/content/lookbook/342x342/photo-7.jpg' alt='' data-object-fit='cover' onload='objectFit(this)')
+            +a().__item
+              img.__item-img(src='static/img/content/lookbook/342x342/photo-8.jpg' alt='' data-object-fit='cover' onload='objectFit(this)')
+            +a().__item
+              img.__item-img(src='static/img/content/lookbook/342x342/photo-9.jpg' alt='' data-object-fit='cover' onload='objectFit(this)')
+          .-content.__options
+            a().btn ещё фото
+
+    +footer

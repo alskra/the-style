@@ -1,0 +1,21 @@
+mixin slider-main()
+  // Slider-main
+  .-slider-main.slick-slider&attributes(attributes)
+    .__item.slick-slide.loading.loading_before
+      img.__item-img(data-lazy='static/img/content/slider-main/1024x432/slide-1.jpg'
+      alt='' data-object-fit='cover' onload='objectFit(this)')
+      .__item-content
+        .__item-section Мода
+        h1.__item-text.
+          Как стать привлекательнее: советы
+        +a().__btn.btn Читать статью
+    .__item.slick-slide.loading.loading_before
+      img.__item-img(data-lazy='static/img/content/slider-main/1024x432/slide-1.jpg'
+      alt='' data-object-fit='cover' onload='objectFit(this)')
+      .__item-content
+        .__item-section Красота
+        h1.__item-text.
+          Cum brabeuta messis, omnes hilotaees locus magnum, primus domusesы
+          Est brevis amicitia, cesarisы
+        +a().__btn.btn Читать статью
+  // /Slider-main

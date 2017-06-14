@@ -1,0 +1,44 @@
+include ../components/doctype/doctype
+include ../components/header/header
+include ../components/content/content
+include ../components/footer/footer
+
++doctype(pages.about.title)
+  .-wrapper
+    +header(false, [pages.about.url])
+    +content
+      section.-section._1
+        .container-fluid
+          h1 О проекте
+          .clearfix
+            .-section.__col._1
+              p.
+                The Style – это эксклюзивные мастер-классы, уникальные рубрики, актуальные и оперативные
+                новости, консультации специалистов, тематические спецпроекты, полезные сервисы.
+              p.
+                Преимущества портала по достоинству оценили пользователи ресурса, в в связи с чем,
+                по результатам независимого всенародного голосования, блог the style  был назван лучшим
+                женским сайтом года.
+            .-section.__col._2
+              address.__address
+                p.
+                  #[strong Блог:] #[+a() The Style]
+                p.
+                  #[strong E-mail:] #[+aMail('thestyle@gmail.com')]
+                p.
+                  #[strong Подписаться:] #[+a() Facebook], #[+a() Pinterest], #[+a() VK]
+      form.-form-feedback(action='')
+        .container-fluid
+          h2.-form-feedback.__title Напишите нам
+          .-form-row
+            .row
+              .col-xs-6
+                input.-text-field._width_100(type='text' name='name' placeholder='Ваше имя')
+              .col-xs-6
+                input.-text-field._width_100(type='email' name='email' placeholder='Ваш email')
+          .-form-row
+            textarea.-text-field._textarea._width_100(name='msg' placeholder='Текст сообщения')
+          .-form-row
+            button.-btn._1(type='submit') Отправить
+
+    +footer

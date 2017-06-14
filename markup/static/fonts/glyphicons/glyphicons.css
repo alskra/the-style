@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "glyphicons";
+  src: url('../fonts/glyphicons/glyphicons.eot');
+  src: url('../fonts/glyphicons/glyphicons.eot?#iefix') format('eot'),
+  url('../fonts/glyphicons/glyphicons.woff2') format('woff2'),
+  url('../fonts/glyphicons/glyphicons.woff') format('woff'),
+  url('../fonts/glyphicons/glyphicons.ttf') format('truetype'),
+  url('../fonts/glyphicons/glyphicons.svg#glyphicons') format('svg');
+}
+
+.glyphicon:before {
+  font-family: "glyphicons";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  /* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+  text-decoration: none;
+  text-transform: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+.glyphicon-angle-right:before {
+  content: "\E001";
+}
+
+.glyphicon-at:before {
+  content: "\E002";
+}
+
+.glyphicon-facebook:before {
+  content: "\E003";
+}
+
+.glyphicon-grid:before {
+  content: "\E004";
+}
+
+.glyphicon-instagram:before {
+  content: "\E005";
+}
+
+.glyphicon-search:before {
+  content: "\E006";
+}
+
+.glyphicon-vk:before {
+  content: "\E007";
+}

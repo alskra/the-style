@@ -1,0 +1,27 @@
+.modal
+  padding 40px 35px
+  width $screen-lg-min - 72px
+  background-color white
+  box-shadow 0 0 14px rgba(202, 202, 202, 0.75)
+
+  &_privacy-policy
+    font-size 12px
+    line-height (15/12)
+    font-weight 500
+
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+      text-transform uppercase
+      font-size 12px
+      line-height (15/12)
+      margin 0 0 (15/12)em
+    section
+      margin 0 0 (15/12)*2em
+    p
+      margin 0 0 (15/12)em
+    ul
+      list-style none
+      padding 0
+      margin 0 0 (15/12)em
+      li
+        &:before
+          content '-\00A0'

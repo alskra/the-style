@@ -1,0 +1,30 @@
+mixin header(isSignIn, urls)
+  // Header
+  header.-header&attributes(attributes)
+    .__inner._1
+      .container-fluid
+        .row
+          .col-xs-3
+            +a('/')(title=pkg.description).-header.__logo
+              img.__logo-img(src='static/img/general/header-logo.png' alt=pkg.description)
+          .col-xs-6
+            -
+              var navList = [
+                {title: pages.moda.title, url: pages.moda.url},
+                {title: pages.krasota.title, url: pages.krasota.url},
+                {title: pages.lookbook.title, url: pages.lookbook.url},
+                {title: pages.about.title, url: pages.about.url}
+              ];
+            nav.-header.__nav
+              each page in navList
+                +a(page.url).__nav-item(class={_current: page.url === urls[0]}) #{page.title}
+          .col-xs-3
+            .-header.__select-language.dropdown
+              button.btn.dropdown-toggle(type='button' data-toggle='dropdown') RUS
+              ul.dropdown-menu.pull-right
+                li: +a() ENG
+            form.-header.__search(action='')
+              .__search-inner
+                input.__search-field(type='search' id='search' name='search' placeholder='Поиск')
+              label.__search-btn.btn.fa.fa-search(for='search')
+  // /Header

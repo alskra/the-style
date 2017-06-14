@@ -1,0 +1,73 @@
+.slider-main
+  overflow hidden
+  height 432px
+  margin 0 -36px
+  background-color white
+  p
+    margin 0
+  .slick-list, .slick-track, .slick-slide
+    height 100%
+
+  &__item
+    position relative
+
+  &__item-img
+    position absolute
+    top 0
+    left 0
+
+  &__item-content
+    color #fff
+    width 53%
+    height 100%
+    padding 100px 24px 0 24px
+    position absolute
+    top 0
+    right 0
+    opacity 1
+    transition 0.2s linear
+    .loading &
+      opacity 0
+
+  &__item-section
+    display inline-block
+    vertical-align top
+    font-size 10px
+    line-height 1em
+    text-transform uppercase
+    margin 0 0 17px 15px
+    &:after
+      content ''
+      display block
+      size 21px 1px
+      border-bottom 1px solid
+      margin 8px auto 0
+
+  &__item-text
+    overflow hidden
+    color inherit
+    font-family KazimirText, sans-serif
+    font-style italic
+    font-size 39px
+    font-weight 400
+    line-height 1.15em
+    max-height calc(1.15em*3 + 4px)
+    padding-bottom 4px
+    margin 0 0 27px
+
+  &__btn
+    color white
+    font-weight 700
+    font-size 12px
+    line-height 1em
+    text-transform uppercase
+    padding 11px 17px 10px
+    border 1px solid white
+    border-radius 2px
+    &:hover,
+    &:focus,
+    &.focus
+      color white
+    &:active,
+    &.active
+      box-shadow inset 0 3px 5px rgba(0, 0, 0, .125)

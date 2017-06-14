@@ -1,0 +1,63 @@
+include ../components/doctype/doctype
+include ../components/header/header
+include ../components/content/content
+include ../components/footer/footer
+
+include ../components/share-box/share-box
+
++doctype(pages.article_1.title)
+  .-wrapper
+    +header(false, [pages.article_1.url])
+    +content
+      article.-article-view
+        header.__header
+          .__header-inner
+            block article-view__img
+              img.__img(src='static/img/content/articles/seksualnaya-privlekatelnost-i-simmetrichnost-v2.jpg' alt='' data-object-fit='cover' onload='objectFit(this)')
+            .container-fluid
+              .row
+                .col-xs-10.col-xs-offset-1
+                  h1.-article-view.__title
+                    block article-view__title
+                      != pages.article_1.title
+        .container-fluid
+          .-article-view.__content
+            .__info
+              span.__info-item июнь 2017
+              span.__info-item Красота
+            block article-view__content
+              p.
+                #[strong Появляйся в кругу друзей] #[br]
+                Привлекательнее всего люди выглядят в обществе друг друга, это научно-доказанный факт. Мозг обрабатывает все лица в группе, усредняя их, делая и в некотором смысле одинаковыми и сглаживая недостатки.
+              p.
+                #[strong Откройся] #[br]
+                Не нужно скрещивать руки на груди, ведь открытые, уверенные позы покажут твою раскрепощенность, а это большое преимущество для первой встречи.
+              p.
+                #[strong Не говори на общие темы] #[br]
+                Психологи выяснили, что пары, которые тратят время на светскую болтовню чувствую меньшую привязанность к друг другу, чем пары, которые разговаривают на личные темы, а некоторые из них даже влюбляются друг в друга. Происходит это потому, что рассказы о себе стимулируют те же области в головном мозге, то и еда или секс.
+              p.
+                #[strong Становись лидером] #[br]
+                Исследования также доказали, что более привлекательными выглядят лидеры групп.
+              p.
+                #[strong Улыбайся] #[br]
+                Чем улыбка шире, тем более приятным кажется лицо. Более того, радостное выражение лица компенсирует недостатки во внешности. Поэтому, не нужно ходить с кислой миной на свидания.
+              p.
+                #[strong Будь милой] #[br]
+                Ученые озвучили такой интересный факт: когда другие люди слышат о ком-то, что считают кого-то классным, то этот кто-то сразу начинает нравиться ему больше. Доброта и легкий характер могут сделать человека более приятным для других — и наоборот.
+              p.
+                #[strong Оставайся собой] #[br]
+                Ученые, проводившие исследования, считают, что самый важный фактор восприятия привлекательности — это окружающая среда, опыт и личные предпочтения. Кроме того, исследования показывают, что в начале отношений большую роль играют сходства, а не различия — поэтому не старайся изображать кого-то другого, оставайся собой.
+            footer.-article-view.__footer
+              +share-box()
+
+
+      .-content.__view-2
+        .container-fluid
+          .row
+            .col-xs-4.text-left
+              +a().-content.__nav-btn #[span.fa.fa-angle-left]Предыдущая статья
+            .col-xs-4.text-center
+              span.glyphicon.glyphicon-grid
+            .col-xs-4.text-right
+              +a().-content.__nav-btn Следующая статья#[span.fa.fa-angle-right]
+    +footer

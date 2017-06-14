@@ -1,0 +1,40 @@
+.text-field
+  display inline-block
+  vertical-align top
+  color $text-color
+  font 300 14px/48px $font-family-base
+  text-align left
+  height 48px
+  padding 0 20px
+  background-color white
+  border 1px solid transparent
+  transition $transition-base
+  &::placeholder
+    color #858585
+  &,
+  &:active,
+  &.active
+    &:focus,
+    &.focus,
+    &.ik_select_link_focus
+      outline 0
+      border-color $text-color
+  &:active,
+  &.active
+    outline 0
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] &
+    disabled()
+
+  &_textarea
+    resize vertical
+    overflow-y auto
+    line-height $line-height-base
+    min-height 170px
+    padding-top 15px
+    padding-bottom 15px
+
+  &_width_100
+    display block
+    width 100%
