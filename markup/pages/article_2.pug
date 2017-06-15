@@ -19,3 +19,11 @@ block article-view__content
   p.
     #[strong Гигиенические трусы] #[br]
     Выглядят будто настоящее белье, а внутри у них прокладка, но она не толще ежедневной. Трусики позволяют избегать протеканий на протяжении 6-8 часов. Стирать их сразу после ношения рекомендуется так: промыть в холодной воде, а затем постирать в стиральной машине.
+
+block page-nav
+  .col-xs-4.text-left
+    +a(pages.article_1.url).-content.__nav-btn #[span.fa.fa-angle-left]Предыдущая статья
+  .col-xs-4.text-center
+    span.glyphicon.glyphicon-grid
+  .col-xs-4.text-right
+    +a(pages.article_3.url).-content.__nav-btn Следующая статья#[span.fa.fa-angle-right]

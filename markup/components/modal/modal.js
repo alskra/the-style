@@ -1,5 +1,5 @@
 $(function () {
     $("[data-fancybox]").fancybox({
-        smallBtn : 'false'
+        smallBtn : 'auto'
     });
 });

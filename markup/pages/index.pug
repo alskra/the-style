@@ -12,17 +12,17 @@ include ../components/slider-main/slider-main
       .container-fluid
         +slider-main()(data-slick='{"autoplaySpeed": 7000}')
         .-row._full
-          +a().-showcase
+          +a(pages.lookbook.url).-showcase
             img.__img(src='static/img/content/showcase/512x512/lookbook.jpg' alt='' data-object-fit='cover' onload='objectFit(this)')
             .__content
               .__section Lookbook
-          +a().-showcase
+          +a(pages.article_5.url).-showcase
             img.__img(src='static/img/content/showcase/512x512/krasota.jpg' alt='' data-object-fit='cover' onload='objectFit(this)')
             .__content
               .__section Красота
               h2.__title Увеличить грудь в домашних условиях
         .-row._full
-          +a().-showcase-new
+          +a(pages.article_2.url).-showcase-new
             .__col._1
               .__content
                 .__section Красота
@@ -33,7 +33,7 @@ include ../components/slider-main/slider-main
                 img.__img(src='static/img/content/showcase-new/512x258/new-1.jpg' alt='' data-object-fit='cover' onload='objectFit(this)')
                 h2.__title: span.__title-fix Новые штучки для комфортных месячных
         .-row._full
-          +a().-showcase-new-1
+          +a(pages.article_4.url).-showcase-new-1
             .__col._1
               .__content
                 img.__img(src='static/img/content/showcase-new-1/256x512/new-2.jpg' alt='' data-object-fit='cover' onload='objectFit(this)')
@@ -42,7 +42,7 @@ include ../components/slider-main/slider-main
                 .__section Красота
                 .__text.
                   Ученые доказали, что офисные работники набирают вес в полтора раза быстрее других людей, и это не удивительно! Вы замечали, что на работе постоянно что-то перекусываете, а встаете из-за своего рабочего места только для того, чтобы налить чаю.
-          +a().-showcase-new-2
+          +a(pages.article_3.url).-showcase-new-2
             .__col._1
               .__content
                 img.__img(src='static/img/content/showcase-new-2/512x256/new-3.jpg' alt='' data-object-fit='cover' onload='objectFit(this)')

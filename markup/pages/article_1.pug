@@ -54,10 +54,11 @@ include ../components/share-box/share-box
       .-content.__view-2
         .container-fluid
           .row
-            .col-xs-4.text-left
-              +a().-content.__nav-btn #[span.fa.fa-angle-left]Предыдущая статья
-            .col-xs-4.text-center
-              span.glyphicon.glyphicon-grid
-            .col-xs-4.text-right
-              +a().-content.__nav-btn Следующая статья#[span.fa.fa-angle-right]
+            block page-nav
+              .col-xs-4.text-left
+                +a(pages.article_5.url).-content.__nav-btn #[span.fa.fa-angle-left]Предыдущая статья
+              .col-xs-4.text-center
+                span.glyphicon.glyphicon-grid
+              .col-xs-4.text-right
+                +a(pages.article_2.url).-content.__nav-btn Следующая статья#[span.fa.fa-angle-right]
     +footer
